@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useContext } from "react";
 import SingleJoke from "../components/SingleJoke";
+import AppBar from "../components/AppBar";
 import styles from "../styles/Home.module.css";
 import { Box, Container, LinearProgress } from "@material-ui/core/";
 import LoadingContext from "../context/LoadingContext";
@@ -8,6 +9,7 @@ import LoadingContext from "../context/LoadingContext";
 export default function Home() {
   return (
     <>
+      <AppBar />
       <body id="gradient">
         <LoadingContext>
           <div>
